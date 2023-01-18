@@ -80,7 +80,8 @@ pipeline {
                 sh "docker -H ssh://jenkins@172.31.28.25 run -d -p 8003:8080 nikhilnidhi/samplewebapp"
  
             }
-        */ }
+        }
+	*/
     }
 	}
 
