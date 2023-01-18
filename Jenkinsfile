@@ -10,7 +10,7 @@ pipeline {
 	
 	  tools
     {
-       maven "Maven"
+       maven "maven"
     }
  stages {
       stage('Logging into AWS ECR') {
