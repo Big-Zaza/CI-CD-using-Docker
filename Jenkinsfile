@@ -62,8 +62,8 @@ pipeline {
      steps{  
          script {
             //    sh """docker tag ${IMAGE_REPO_NAME}:${IMAGE_TAG} ${REPOSITORY_URI}:$IMAGE_TAG"""
-		 sh """docker tag test/team4:latest 252316791856.dkr.ecr.us-east-1.amazonaws.com/test/team4:latest""""
-		 sh """docker push 252316791856.dkr.ecr.us-east-1.amazonaws.com/test/team4:latest"""
+		  sh """docker tag test/team4:latest 252316791856.dkr.ecr.us-east-1.amazonaws.com/test/team4:latest"""
+		  sh """docker push 252316791856.dkr.ecr.us-east-1.amazonaws.com/test/team4:latest"""
               //  sh """docker push ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}:${IMAGE_TAG}"""
          }
         }
