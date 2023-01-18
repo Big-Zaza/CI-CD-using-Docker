@@ -13,14 +13,14 @@ pipeline {
        maven "maven"
     }
  stages {
-      stage('Logging into AWS ECR') {
-            steps {
+      //stage('Logging into AWS ECR') {
+         // steps {
                 //script {
-                sh "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 252316791856.dkr.ecr.us-east-1.amazonaws.com"
+                //sh "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 252316791856.dkr.ecr.us-east-1.amazonaws.com"
                // }
                  
-            }
-        }	 
+           // }
+       // }	 
       stage('checkout') {
            steps {
              
