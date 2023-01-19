@@ -58,7 +58,7 @@ pipeline {
        } 
        */
 	// Uploading Docker images into AWS ECR
-    stage('Pushing to ECR') {
+  /*  stage('Pushing to ECR') {
      steps{  
          script {
             //    sh """docker tag ${IMAGE_REPO_NAME}:${IMAGE_TAG} ${REPOSITORY_URI}:$IMAGE_TAG"""
@@ -68,6 +68,7 @@ pipeline {
          }
         }
       }
+      */
      
       stage('Run Docker container on Jenkins Agent') {
              
